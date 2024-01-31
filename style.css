@@ -1,0 +1,47 @@
+@font-face {
+    font-family: fira-code;
+    src: url(C:\Users\hughesda\Documents\Portfolio\fonts\Fira_Code\FiraCode-VariableFont_wght.ttf);
+}
+
+body {
+    font-family: fira-code;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px; 
+}
+
+header {
+    grid-area: 1 / 1 / 2 / 6;
+}
+
+aside {
+    grid-area: 2 / 1 / 5 / 3;
+}
+
+main {
+    grid-area: 2 / 3 / 5 / 6;
+}
+
+footer {
+    grid-area: 5 / 1 / 6 / 6;
+}
+
+.rounded-circle {
+    width: 25%;
+}
+
+.jumbotron {
+    background-image: url(https://www.hallmarknameplate.com/wp-content/uploads/2016/07/circuit-board-1.jpeg);
+    background-size: contain;
+}
+
+header h1 {
+    display: inline;
+    color:#FFFFFF;
+    font-size: 32px;
+}
