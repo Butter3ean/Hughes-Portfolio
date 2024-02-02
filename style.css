@@ -7,48 +7,41 @@ body {
     font-family: fira-code;
 }
 
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px; 
+.container {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.2fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header header"
+      "main main main"
+      "footer footer footer";
+  }
+  
+  header { grid-area: header; }
+  
+  main {  display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "about-me about-me about-me"
+      "skills projects projects"
+      "skills projects projects";
+    grid-area: main;
+  }
+  
+  .about-me { grid-area: about-me; }
+  
+  .skills { grid-area: skills; }
+  
+  .projects { grid-area: projects; }
+  
+  footer { grid-area: footer; }
+
+
+.rounded-circle  {
+    max-width: 25%;
 }
 
-
-header {
-    grid-area: 1 / 1 / 2 / 4;
-    display: flexbox;
-    flex-direction: row;
-    align-items: center;
-
-}
-
-aside {
-    grid-area: 2 / 2 / 4 / 1;
-    background-color: aliceblue;
-}
-
-main {
-    grid-area: 2 / 2 / 4 / 4;
-    background-color: blueviolet;
-}
-
-footer {
-    grid-area: 4 / 1 / 4 / 4;
-}
-
-.rounded-circle {
-    width: 25%;
-}
-
-.jumbotron {
-    background-image: url(https://www.hallmarknameplate.com/wp-content/uploads/2016/07/circuit-board-1.jpeg);
-    background-size: contain;
-}
-
-header h1 {
-    display: inline;
-    color:#FFFFFF;
-    font-size: 32px;
-}
