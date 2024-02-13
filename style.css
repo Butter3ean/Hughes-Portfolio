@@ -1,6 +1,6 @@
 @font-face {
   font-family: fira-code;
-  src: url(C:\Users\hughesda\Documents\Portfolio\fonts\Fira_Code\FiraCode-VariableFont_wght.ttf);
+  src: url(fonts\Fira_Code\FiraCode-VariableFont_wght.ttf);
 }
 
 body {
@@ -18,32 +18,8 @@ body {
     "main main main"
     "footer footer footer";
 }
-
-.board {
-  background-color: black;
-  width: 100%;
-  height: 200px;
-}
-
-.ball, .paddle1, .paddle2 {
-  background-color: white;
-}
-
-.paddle1, .paddle2 {
-  width: 10px;
-  height: 15px;
-}
-
-.ball {
-  position: absolute;
-  top: 200px;
-  right: 50px;
-}
-
-.paddle1 {
-  position: absolute;
-  top: 25px;
-  left: 25px;
+.kotlin-logo {
+  width: 1.5em;
 }
 
 header {
@@ -53,6 +29,7 @@ header {
 .jumbotron {
   background-image: url(https://hackernoon.imgix.net/images/f2px36fy.gif);
   background-size: cover;
+  color: white;
 }
 
 main {
